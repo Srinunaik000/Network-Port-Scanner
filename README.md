@@ -1,26 +1,25 @@
 ## Port Scanner & CIDR Range Scanner
-This repository contains a Port Scanner and a CIDR Range Scanner written in Python. The script allows you to scan open ports on a single IP address or perform a network scan to identify live hosts within a CIDR range using ICMP (ping sweep).
+- This repository contains a Port Scanner and a CIDR Range Scanner written in Python. The script allows you to scan open ports on a single IP address or perform a network scan to identify live hosts within a CIDR range using ICMP (ping sweep).
 
-Features
-Single IP Scan (-t <IP>): Scan a single IP address for open ports.
-CIDR Range Scan (-c <CIDR>): Scan a subnet (CIDR) to find which IPs are alive.
-Requirements
-Python 3.x: Ensure Python 3 is installed on your system.
-No additional libraries: This script only requires Python’s built-in libraries.
-Modules Used:
-socket - For port scanning using TCP connections.
-subprocess - For executing ping commands to check host availability (ICMP).
-ipaddress - For handling CIDR input and iterating through subnet IPs.
-platform - To determine the operating system and set the correct ping command options.
-Installation & Setup
-Clone the repository:
+### Features
+- Single IP Scan (-t <IP>): Scan a single IP address for open ports.
+- CIDR Range Scan (-c <CIDR>): Scan a subnet (CIDR) to find which IPs are alive.
 
-bash
-Copy
-Edit
-git clone https://github.com/your-username/port-scanner.git
-cd port-scanner
-Make sure you have Python 3.x installed:
+### Requirements
+- Python 3.x: Ensure Python 3 is installed on your system.
+- No additional libraries: This script only requires Python’s built-in libraries.
+
+### Modules Used:
+- socket - For port scanning using TCP connections.
+- subprocess - For executing ping commands to check host availability (ICMP).
+- ipaddress - For handling CIDR input and iterating through subnet IPs.
+- platform - To determine the operating system and set the correct ping command options.
+
+### Installation & Setup
+#### Clone the repository:
+- git clone https://github.com/your-username/port-scanner.git
+- cd port-scanner
+- Make sure you have Python 3.x installed:
 
 bash
 Copy
