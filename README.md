@@ -22,15 +22,17 @@ python3 --version
 - No additional libraries are needed. The script uses Python's built-in libraries (socket, subprocess, ipaddress, and platform).
 
 ### Usage
-1. Scan a Single IP for Open Ports
+### 1. Scan a Single IP for Open Ports
 - To scan a single IP address for open ports (from 1 to 65535):
 
 python3 portscan.py -t <TARGET_IP>
 #### Example:
 python3 portscan.py -t <ipaddress>
-This will scan ports 1-65535 for the given IP and show which ones are open.
+- This will scan ports 1-65535 for the given IP and show which ones are open.
 
-2. Scan a CIDR Range for Live Hosts
+
+
+### 2. Scan a CIDR Range for Live Hosts
 - To scan an entire subnet and check which IPs are alive (ICMP ping sweep):
 python3 net_scan.py -c <CIDR>
 #### Example:
