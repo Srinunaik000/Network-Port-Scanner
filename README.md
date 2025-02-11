@@ -1,4 +1,4 @@
-### Port Scanner & CIDR Range Scanner
+## Port Scanner & CIDR Range Scanner
 This repository contains a Port Scanner and a CIDR Range Scanner written in Python. The script allows you to scan open ports on a single IP address or perform a network scan to identify live hosts within a CIDR range using ICMP (ping sweep).
 
 Features
