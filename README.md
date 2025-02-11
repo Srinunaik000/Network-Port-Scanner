@@ -23,12 +23,12 @@ python3 --version
 
 ### Usage
 1. Scan a Single IP for Open Ports
-- To scan a single IP address for open ports (from 1 to 1024):
+- To scan a single IP address for open ports (from 1 to 65535):
 
 python3 portscan.py -t <TARGET_IP>
 #### Example:
 python3 portscan.py -t <ipaddress>
-This will scan ports 1-1024 for the given IP and show which ones are open.
+This will scan ports 1-65535 for the given IP and show which ones are open.
 
 2. Scan a CIDR Range for Live Hosts
 - To scan an entire subnet and check which IPs are alive (ICMP ping sweep):
