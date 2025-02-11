@@ -9,28 +9,22 @@
 - Python 3.x: Ensure Python 3 is installed on your system.
 - No additional libraries: This script only requires Python’s built-in libraries.
 
-### Modules Used:
-- socket - For port scanning using TCP connections.
-- subprocess - For executing ping commands to check host availability (ICMP).
-- ipaddress - For handling CIDR input and iterating through subnet IPs.
-- platform - To determine the operating system and set the correct ping command options.
-
 ### Installation & Setup
 #### Clone the repository:
 - git clone https://github.com/your-username/port-scanner.git
 - cd port-scanner
 - Make sure you have Python 3.x installed:
 
-- python3 --version
+python3 --version
 - No additional libraries are needed. The script uses Python's built-in libraries (socket, subprocess, ipaddress, and platform).
 
 ### Usage
 1. Scan a Single IP for Open Ports
 - To scan a single IP address for open ports (from 1 to 1024):
 
-- python3 scanner.py -t <TARGET_IP>
+python3 scanner.py -t <TARGET_IP>
 #### Example:
-- python3 portscan.py -t <ipaddress>
+python3 portscan.py -t <ipaddress>
 This will scan ports 1-1024 for the given IP and show which ones are open.
 
 2. Scan a CIDR Range for Live Hosts
