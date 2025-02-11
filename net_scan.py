@@ -3,6 +3,16 @@ import subprocess
 import platform
 import threading
 
+banner = """
+     ____            _     ____  
+    |  _ \ ___  _ __| |_  / ___|  ___ __ _ _ __  _ __   ___ _ __  
+    | |_) / _ \| '__| __| \___ \ / __/ _` | '_ \| '_ \ / _ \ '__|  
+    |  __/ (_) | |  | |_   ___) | (_| (_| | | | | | | |  __/ |  
+    |_|   \___/|_|   \__| |____/ \___\__,_|_| |_|_| |_|\___|_|  
+
+Author: SrinuNaik (D3V1L)
+"""
+
 def is_host_alive(ip):
     """Ping a host to check if it's alive."""
     try:
