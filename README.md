@@ -21,39 +21,21 @@
 - cd port-scanner
 - Make sure you have Python 3.x installed:
 
-bash
-Copy
-Edit
-python3 --version
-No additional libraries are needed. The script uses Python's built-in libraries (socket, subprocess, ipaddress, and platform).
+- python3 --version
+- No additional libraries are needed. The script uses Python's built-in libraries (socket, subprocess, ipaddress, and platform).
 
-Usage
+### Usage
 1. Scan a Single IP for Open Ports
-To scan a single IP address for open ports (from 1 to 1024):
+- To scan a single IP address for open ports (from 1 to 1024):
 
-bash
-Copy
-Edit
-python3 scanner.py -t <TARGET_IP>
-Example:
-
-bash
-Copy
-Edit
-python3 scanner.py -t 192.168.1.10
+- python3 scanner.py -t <TARGET_IP>
+#### Example:
+- python3 portscan.py -t <ipaddress>
 This will scan ports 1-1024 for the given IP and show which ones are open.
 
 2. Scan a CIDR Range for Live Hosts
-To scan an entire subnet and check which IPs are alive (ICMP ping sweep):
-
-bash
-Copy
-Edit
-python3 scanner.py -c <CIDR>
-Example:
-
-bash
-Copy
-Edit
+- To scan an entire subnet and check which IPs are alive (ICMP ping sweep):
+python3 net_scan.py -c <CIDR>
+#### Example:
 python3 scanner.py -c 192.168.1.0/24
-This will ping each host in the 192.168.1.0/24 range and list which ones are alive (reachable)
+- This will ping each host in the 192.168.1.0/24 range and list which ones are alive (reachable)
